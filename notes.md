@@ -23,7 +23,7 @@ alle Schulungs-Quell-Unterlagen zur Verfügung und setzen den genauen zeitlichen
 Umfang Ihres Schulungsbeitrags fest (für Vortrag und „Hands-on“-Szenario ohne 
 Frage-Runde). 
 
-Abgabetermin: Am Mittag des xx.xx.2023 (elektronische Unterlagen + avisierter 
+Abgabetermin: Am Mittag des 09.04.2023 (elektronische Unterlagen + avisierter 
 zeitlicher Umfang)
 
 Alle vorbereiteten Unterlagen inkl. avisiertem Zeitraster per eMail an 
