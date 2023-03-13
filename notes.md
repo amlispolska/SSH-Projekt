@@ -89,6 +89,15 @@ auf dem Firmen-Server
 		- Minimum an Input wird an gesteuertem Gerät gesendet und 
 		  minimum an Ausgabe (bsp. *Framebuffer/Output der Grafikkarte*) 
 		  wird an das Steuernde Gerät gesendet
+		- Wurde in Konkurrenz zum Open-Source VNC-Protokoll entwickelt. 
+		- VNC
+			- Virtual Network Computing
+			- Seit den 90s bei UNIX VNC ein für RDP-Ähnliches 
+			  X11-Protokoll
+			- Stark von RDP abweichende technische Implementierung, 
+			jedoch mit gleichem Ziel
+			- VNC implementiert das Remote Framebuffer Protocol und 
+			ist damit plattformunabhängig
 
 - Hands-On-Szenario (SSH): 
 	1. Linux Server VM über Beamer, ein Freiwilliger richtet unter 
