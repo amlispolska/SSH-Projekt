@@ -86,7 +86,9 @@ auf dem Firmen-Server
 		  sog. "Remote Desktop Services", auf anderen geräten die 
 		  Clientkomponente, die eine Verbindung mit diesem Service 
 		  aufbauen kann. 
-		- 
+		- Minimum an Input wird an gesteuertem Gerät gesendet und 
+		  minimum an Ausgabe (bsp. *Framebuffer/Output der Grafikkarte*) 
+		  wird an das Steuernde Gerät gesendet
 
 - Hands-On-Szenario (SSH): 
 	1. Linux Server VM über Beamer, ein Freiwilliger richtet unter 
