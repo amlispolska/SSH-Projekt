@@ -99,6 +99,26 @@ auf dem Firmen-Server
 			- VNC implementiert das Remote Framebuffer Protocol und 
 			ist damit plattformunabhängig
 
+3. Secure Shell (SSH)
+- Kryptographisches Netzwerkprotokoll für den Sicheren Betrieb von 
+  Netzwerkdiesnten
+- In Erster Linie als sicherer Ersatz von Telnet in Verwendung
+	- Auch für den Dateiaustausch (sFTP (FTP via SSH) genutzt)
+- Verfolgt auch das Client-Server Modell:
+	- Eine SSH-Client-Anwendung verbindet sich mit einem SSH-Server. 
+- Es werden zwei verschiedene SSH-Spezifikationsversionen unterschieden: SSH-1 
+  und SSH-2
+- Die IANA hat dem Protokoll den TCP-Port 22, UDP-Port 22 und SCTP-Port 22 
+  zugeordnet 
+
+- Entstand 1995 als Reaktion auf die Nachfrage nach drop-in Alternativen zu 
+  UNIX's Berkeley Services bzw. deren Befehle rsh, rcp und rlogin
+- Erste Version als Freeware
+
+
+
+ 
+
 - Hands-On-Szenario (SSH): 
 	1. Linux Server VM über Beamer, ein Freiwilliger richtet unter 
 	   Einleitung den SSH-Dienst ein
