@@ -87,6 +87,12 @@ auf dem Firmen-Server
 		  Clientkomponente, die eine Verbindung mit diesem Service 
 		  aufbauen kann. 
 		- 
+	- TeamViewer
+		- Fernwartungssoftware für Kontrollierten zugriff
+		  auf andere Rechner.
+		- Erfordert die TeamViewer software auf beiden geräten.
+		- Baut eine TCP-UDP verbindung über den Port 5938 auf.
+		- End to End verschlösselung mit RSA und AES
 
 - Hands-On-Szenario (SSH): 
 	1. Linux Server VM über Beamer, ein Freiwilliger richtet unter 
