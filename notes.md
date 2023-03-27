@@ -23,7 +23,7 @@ alle Schulungs-Quell-Unterlagen zur Verfügung und setzen den genauen zeitlichen
 Umfang Ihres Schulungsbeitrags fest (für Vortrag und „Hands-on“-Szenario ohne 
 Frage-Runde). 
 
-Abgabetermin: Am Mittag des xx.xx.2023 (elektronische Unterlagen + avisierter 
+Abgabetermin: Am Mittag des 09.04.2023 (elektronische Unterlagen + avisierter 
 zeitlicher Umfang)
 
 Alle vorbereiteten Unterlagen inkl. avisiertem Zeitraster per eMail an 
@@ -86,8 +86,36 @@ auf dem Firmen-Server
 		  sog. "Remote Desktop Services", auf anderen geräten die 
 		  Clientkomponente, die eine Verbindung mit diesem Service 
 		  aufbauen kann. 
-		- 
-	- TeamViewer
+		- Minimum an Input wird an gesteuertem Gerät gesendet und 
+		  minimum an Ausgabe (bsp. *Framebuffer/Output der Grafikkarte*) 
+		  wird an das Steuernde Gerät gesendet
+		- Wurde in Konkurrenz zum Open-Source VNC-Protokoll entwickelt. 
+		- VNC
+			- Virtual Network Computing
+			- Seit den 90s bei UNIX VNC ein für RDP-Ähnliches 
+			  X11-Protokoll
+			- Stark von RDP abweichende technische Implementierung, 
+			jedoch mit gleichem Ziel
+			- VNC implementiert das Remote Framebuffer Protocol und 
+			ist damit plattformunabhängig
+
+3. Secure Shell (SSH)
+- Kryptographisches Netzwerkprotokoll für den Sicheren Betrieb von 
+  Netzwerkdiesnten
+- In Erster Linie als sicherer Ersatz von Telnet in Verwendung
+	- Auch für den Dateiaustausch (sFTP (FTP via SSH) genutzt)
+- Verfolgt auch das Client-Server Modell:
+	- Eine SSH-Client-Anwendung verbindet sich mit einem SSH-Server. 
+- Es werden zwei verschiedene SSH-Spezifikationsversionen unterschieden: SSH-1 
+  und SSH-2
+- Die IANA hat dem Protokoll den TCP-Port 22, UDP-Port 22 und SCTP-Port 22 
+  zugeordnet 
+
+- Entstand 1995 als Reaktion auf die Nachfrage nach drop-in Alternativen zu 
+  UNIX's Berkeley Services bzw. deren Befehle rsh, rcp und rlogin
+- Erste Version als Freeware
+
+4. TeamViewer
 		- Fernwartungssoftware für Kontrollierten zugriff
 		  auf andere Rechner.
 		- Erfordert die TeamViewer software auf beiden geräten.
