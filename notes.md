@@ -115,9 +115,12 @@ auf dem Firmen-Server
   UNIX's Berkeley Services bzw. deren Befehle rsh, rcp und rlogin
 - Erste Version als Freeware
 
-
-
- 
+4. TeamViewer
+		- Fernwartungssoftware für Kontrollierten zugriff
+		  auf andere Rechner.
+		- Erfordert die TeamViewer software auf beiden geräten.
+		- Baut eine TCP-UDP verbindung über den Port 5938 auf.
+		- End to End verschlösselung mit RSA und AES
 
 - Hands-On-Szenario (SSH): 
 	1. Linux Server VM über Beamer, ein Freiwilliger richtet unter 
