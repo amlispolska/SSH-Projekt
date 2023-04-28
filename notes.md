@@ -68,64 +68,58 @@ auf dem Firmen-Server
 	- Hauptfokus auf SSH
 
 2. Vorstellung einzelner Protokolle
-	- Telnet
-		- Dienst für den Virtuellen Zugriff auf einen Computer und für 
-		  die Bereitstellung einer Bidirektionalen, textbasierten 
-		  Kommunikationsverbindung zwischen zwei Computern
-		- Sollte nicht verwendet werden, da übertragene Daten nicht
-		  verschlüsselt werden (Weder der Login noch der Rest der 
-		  Kommunikation)
-	- RDP
-		- Remote Desktop Protocol: Proprietäres Netzwerkprotolkoll für 
-		  den Fernzugriff auf (meist WIndows-)Computer. 
-		- Ermöglicht die Übertragung grafischer Inhalte eines remote 
-		  Rechners und die Bereitstellung der Peripherie eines 
-		  Arbeitsplatzes (Tastatur, Maus, Audio-IO, Viedoeingabe, 
-		  Clipboard, Drucker und Filesystembereitstellung)
-		- Verfolgt ein Server/CLient-Modell: Auf einem Gerät laufen die 
-		  sog. "Remote Desktop Services", auf anderen geräten die 
-		  Clientkomponente, die eine Verbindung mit diesem Service 
-		  aufbauen kann. 
-		- Minimum an Input wird an gesteuertem Gerät gesendet und 
-		  minimum an Ausgabe (bsp. *Framebuffer/Output der Grafikkarte*) 
-		  wird an das Steuernde Gerät gesendet
-		- Wurde in Konkurrenz zum Open-Source VNC-Protokoll entwickelt. 
-		- VNC
-			- Virtual Network Computing
-			- Seit den 90s bei UNIX VNC ein für RDP-Ähnliches 
-			  X11-Protokoll
-			- Stark von RDP abweichende technische Implementierung, 
-			jedoch mit gleichem Ziel
-			- VNC implementiert das Remote Framebuffer Protocol und 
-			ist damit plattformunabhängig
+1. Telnet
+	- *Teletype Network*
+	- Entwckelt 1969 im Rahmen des ARPANET 
+		- Ziel: Rechenzeit, Anwendungen und Datenbanken remote nutzen können
+		- Erster einsatz 1974
+	- Dienst für den Virtuellen Zugriff auf einen Computer und für 
+		die Bereitstellung einer Bidirektionalen, textbasierten 
+		Kommunikationsverbindung zwischen zwei Computern
+	- Sollte nicht verwendet werden, da übertragene Daten nicht
+		verschlüsselt werden (Weder der Login noch der Rest der 
+		Kommunikation)
+2. RDP
+	- Remote Desktop Protocol: Proprietäres Netzwerkprotolkoll für 
+		den Fernzugriff auf (meist WIndows-)Computer. 
+	- Entwickelt 1998 von Microsoft basierend auf die von Microsoft lizensierte 
+	  Citrix-Technik Multiwin
+	- Verfügbar ab WindowsNT 4.0 bzw. Windows XP SP-1
+	- Ermöglicht die Übertragung grafischer Inhalte eines remote 
+		Rechners und die Bereitstellung der Peripherie eines 
+		Arbeitsplatzes (Tastatur, Maus, Audio-IO, Viedoeingabe, 
+		Clipboard, Drucker und Filesystembereitstellung)
+	- Verfolgt ein Server/CLient-Modell: Auf einem Gerät laufen die 
+		sog. "Remote Desktop Services", auf anderen geräten die 
+		Clientkomponente, die eine Verbindung mit diesem Service 
+		aufbauen kann. 
+	- Minimum an Input wird an gesteuertem Gerät gesendet und 
+		minimum an Ausgabe (bsp. *Framebuffer/Output der Grafikkarte*) 
+		wird an das Steuernde Gerät gesendet
+	- Wurde in Konkurrenz zum Open-Source VNC-Protokoll entwickelt. 
+	- VNC
+		- Virtual Network Computing
+		- Seit den 90s bei UNIX VNC ein RDP-Ähnliches 
+			X11-Protokoll
+		- Stark von RDP abweichende technische Implementierung, 
+		jedoch mit gleichem Ziel
+		- VNC implementiert das Remote Framebuffer Protocol und 
+		ist damit plattformunabhängig
 
-3. Secure Shell (SSH)
-- Kryptographisches Netzwerkprotokoll für den Sicheren Betrieb von 
-  Netzwerkdiesnten
-- In Erster Linie als sicherer Ersatz von Telnet in Verwendung
-	- Auch für den Dateiaustausch (sFTP (FTP via SSH) genutzt)
-- Verfolgt auch das Client-Server Modell:
-	- Eine SSH-Client-Anwendung verbindet sich mit einem SSH-Server. 
-- Es werden zwei verschiedene SSH-Spezifikationsversionen unterschieden: SSH-1 
-  und SSH-2
-- Die IANA hat dem Protokoll den TCP-Port 22, UDP-Port 22 und SCTP-Port 22 
-  zugeordnet 
-
-- Entstand 1995 als Reaktion auf die Nachfrage nach drop-in Alternativen zu 
-  UNIX's Berkeley Services bzw. deren Befehle rsh, rcp und rlogin
-- Erste Version als Freeware
-
-4. TeamViewer
+3. TeamViewer
 	- Fernwartungssoftware für Kontrollierten zugriff
 	  auf andere Rechner.
 	- Erfordert die TeamViewer software auf beiden geräten.
-	- Baut eine TCP-UDP verbindung über den Port 5938 auf.
+	- Baut eine TCP/UDP Verbindung über den Port 5938 auf.
 	- End to End verschlösselung mit RSA und AES
 
+4. Secure Shell (SSH)
+	- Entwickelt 1995 von Tatu Ylönen
+		- Bemerkte Sniffing-Angriffe auf RSH- und Telnet-Verbiundungen im Netzwerk der 
+		  Universität Helsinki
+			- RSH, rlogin und Telnet sind plain-text Fernzugriffs-Protokolle aus der
+			  Prä-Internet-Zeit
+	- 	
+
+
 - Hands-On-Szenario (SSH): 
-	1. Linux Server VM über Beamer, ein Freiwilliger richtet unter 
-	   Einleitung den SSH-Dienst ein
-	2. In Einzelarbeit können dann alle versuchen, sich per SSH auf jene 
-	   Linux-VM einzuloggen. Um vorzuweisen, dass sie die Verbindung 
-	   erfolgreich übernommen haben, müssen sie eine Textdatei auslesen. 
-	   Diese ist die Lösung für eine der Aufgaben. 
