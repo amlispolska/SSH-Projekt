@@ -107,9 +107,12 @@ auf dem Firmen-Server
 	  ist damit plattformunabhängig
 
 4. TeamViewer
+	- 2005 veröffentlicht und Funktionalität schrittweise aufgebaut
+	- Basierte ursprünglich auf VNC
+	- Wollte unnötige Fahrten zu Kunden meiden
 	- Fernwartungssoftware für Kontrollierten zugriff
 	  auf andere Rechner.
-	- Erfordert die TeamViewer software auf beiden geräten.
+	- Erfordert die TeamViewer software auf beiden Geräten.
 	- Baut eine TCP/UDP Verbindung über den Port 5938 auf.
 	- End to End verschlösselung mit RSA und AES
 
