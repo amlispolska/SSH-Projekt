@@ -148,11 +148,14 @@ auf dem Firmen-Server
 				- Passwort
 				- Auch die Privaten Schlüssel können verschlüsselt
 				  werden
-				- Bei aktuellen Versionen auch MFA möglich
+				- Bei aktuellen Versionen auch MFA möglich 
+			- Außerdem wird pro SSH-Verbindung ein Channel eingerichtet
+				- Mehrere Verbindung zwischen gleichem Client
+				  Server möglich
 
 		- Paketaufbau:
-			1. Paketlänge (Unverschlüsselt)
-			2. Paddingmenge (Verschlüsselt)
+			1. Paketlänge (4 Bytes) (Unverschlüsselt)
+			2. Paddingmenge (1 Byte) (Verschlüsselt)
 			3. Payload/Inhalt (Verschlüsselt)
 				- Kann auch anderes Protokoll sein
 				- Kann Komprimiert werden
@@ -169,3 +172,13 @@ auf dem Firmen-Server
 				- Dient der Verifizierung der Integrität des Pakets
 
 - Hands-On-Szenario (SSH):
+	1. Einrichten eines SSH-Servers unter Ubuntu
+		- Installation
+		- Konfiguration
+		- Starten und Einschalten des Daemons unter systemd
+	2. Verbinden und Authentifizieren via Kennwort
+		- Hinterlegen des eigenen Public Keys auf dem SSH-Server
+	3. Verbinden und Authentifizieren via SSH-Keys
+	5. Upload und Download von Dateien via SCP (Secure Copy/copy over SSH)
+	5. Weiterleiten einer X11-Sitzung über SSH
+
