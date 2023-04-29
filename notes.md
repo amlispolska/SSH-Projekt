@@ -97,23 +97,23 @@ auf dem Firmen-Server
 		minimum an Ausgabe (bsp. *Framebuffer/Output der Grafikkarte*) 
 		wird an das Steuernde Gerät gesendet
 	- Wurde in Konkurrenz zum Open-Source VNC-Protokoll entwickelt. 
-	- VNC
-		- Virtual Network Computing
-		- Seit den 90s bei UNIX VNC ein RDP-Ähnliches 
-			X11-Protokoll
-		- Stark von RDP abweichende technische Implementierung, 
-		jedoch mit gleichem Ziel
-		- VNC implementiert das Remote Framebuffer Protocol und 
-		ist damit plattformunabhängig
+3. VNC
+	- Virtual Network Computing
+	- Seit den 90s bei UNIX VNC ein RDP-Ähnliches 
+	   X11-Protokoll
+	- Stark von RDP abweichende technische Implementierung, 
+	  jedoch mit gleichem Ziel
+	- VNC implementiert das Remote Framebuffer Protocol und 
+	  ist damit plattformunabhängig
 
-3. TeamViewer
+4. TeamViewer
 	- Fernwartungssoftware für Kontrollierten zugriff
 	  auf andere Rechner.
 	- Erfordert die TeamViewer software auf beiden geräten.
 	- Baut eine TCP/UDP Verbindung über den Port 5938 auf.
 	- End to End verschlösselung mit RSA und AES
 
-4. Secure Shell (SSH)
+5. Secure Shell (SSH)
 	- Entwickelt 1995 von Tatu Ylönen
 		- Bemerkte Sniffing-Angriffe auf RSH- und Telnet-Verbiundungen im Netzwerk der 
 		  Universität Helsinki
