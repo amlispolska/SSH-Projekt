@@ -179,6 +179,31 @@ auf dem Firmen-Server
 	2. Verbinden und Authentifizieren via Kennwort
 		- Hinterlegen des eigenen Public Keys auf dem SSH-Server
 	3. Verbinden und Authentifizieren via SSH-Keys
-	5. Upload und Download von Dateien via SCP (Secure Copy/copy over SSH)
+	4. Upload und Download von Dateien via SCP (Secure Copy/copy over SSH)
 	5. Weiterleiten einer X11-Sitzung über SSH
 
+---
+
+### Konkreter Aufbau SSH-Hands-On
+
+- Vorbereitetes VMDK Image
+	- Dateien zum Hoch- und Runterladen
+	- SSH nicht Vorkonfiguriert
+- Schriftliches Guide
+	- Womit kann man die Aufgaben erledigen
+- Schriftlicher Multiple-Choice Test
+	- Wie baue ich eine SSH-Shell-Verbindung auf?
+	- Welche Segmente einer SSH-PDU sind unverschlüsselt?
+	- Warum wurde SSH entwickelt?
+	- Wofür ist das Padding da?
+
+---
+
+### SSH-Hands-On-Vorbereitung
+
+1. Ubuntu VM unter VirtualBox
+2. Ein Paar Dateien verschiedener Formate für die SCP-Befehle ablegen
+3. VMDK Image erstellen und auf SourceForge hochladen
+4. Testen
+5. Dokumentieren und als Guide zusammenfassen
+6. Multiple-Choice-Test erstellen
